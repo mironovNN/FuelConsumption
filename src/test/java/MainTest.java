@@ -11,13 +11,12 @@ class MainTest {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Введите расход топлива: ");
-        int FuelConsumption = 10;
+        int FuelConsumption = 8;
 
         System.out.println("Введите количество топлива в баке: ");
         int FuelAmount = 10;
-
-        System.out.println("Данного топлива хватит на: " + (FuelAmount / FuelConsumption) * 100 + " км");
+        int WayOnFuel = (FuelAmount / FuelConsumption) * 100;
+        System.out.println("Данного топлива хватит на: " + WayOnFuel + " км");
 
     }
-
 }

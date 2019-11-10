@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 public class Main {
-    public void main(String[] args) {
-
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Введите расход топлива: ");
-        int FuelConsumption = in.nextInt();
+        double FuelConsumption = in.nextDouble();
 
         System.out.println("Введите количество топлива в баке: ");
-        int FuelAmount = in.nextInt();
+        double FuelAmount = in.nextDouble();
 
-        System.out.println("Данного топлива хватит на: " + (FuelAmount / FuelConsumption) * 100 + " км");
+        double WayOnFuel = (FuelAmount / FuelConsumption) * 100;
+        System.out.println("Данного топлива хватит на: " + WayOnFuel + " км");
     }
 }
 
