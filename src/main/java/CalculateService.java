@@ -1,11 +1,11 @@
 public class CalculateService {
 
-        public double mileageCalculation(double FuelAmount, double FuelConsumption){
+        public double mileageCalculation(double fuelAmount, double fuelConsumption){
 
-            if (FuelAmount <= 0){
+            if (fuelAmount <= 0){
                 return 0;
             }
-            double result = (FuelAmount / FuelConsumption) * 100;
+            double result = (fuelAmount / fuelConsumption) * 100;
 
             return result;
 
